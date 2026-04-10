@@ -1,0 +1,18 @@
+[package]
+name = "brevity"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+clap = { version = "4", features = ["derive"] }
+hex = "0.4"
+serde = { version = "1", features = ["derive"] }
+thiserror = "2"
+sha2 = "0.10"
+toml = "1"
+uuid = { version = "1", features = ["v4", "serde"] }
+winfsp = { version = "0.12", features = ["system"] }
+windows = { version = "0.61", features = ["Win32_Foundation"] }
+
+[build-dependencies]
+winfsp = { version = "0.12", features = ["build"] }
